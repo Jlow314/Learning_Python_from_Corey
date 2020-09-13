@@ -1,7 +1,9 @@
 import requests
 
 r = requests.get("https://www.cisco.com")
+
 print(r.status_code)
+print(r.url)
 
 # git: in settings gitbash shell path gezet
 # open terminal opens gitbash shell
