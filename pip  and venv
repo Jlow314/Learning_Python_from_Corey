@@ -1,0 +1,32 @@
+pip --help
+pip help install
+pip list
+pip freeze > requirements.txt  #freeze is like list, but the format is such that it can be used as a requirements file to import packages using pip install -r requiremetns.txt
+
+c:\python -m venv c:\CODING\venv
+c:\CODING\venv\Scripts\Activate.bat
+(venv) pip install -r requirements.txt #installs packages exported above with pip freeze into this venv.
+
+(venv) deactivate # to deactivat the venv and go to normal prompt
+To delete a venv : rndir c:\CODING\venv /s
+
+#To create a venv with the packages based on the system installed packages:
+python -m venv c:\CODING\venv --system-site-packages
+c:\CODING\venv\Scripts\activate.bat
+# if you now do a pip list, you will see that packages imported from the system
+# installing additional packages in the venv will not affect system packages
+pip list --local # will show packages only available in the venv, but not the sytem packages
+pip freeze --local
+
+
+
+
+
+
+
+
+
+
+
+
+

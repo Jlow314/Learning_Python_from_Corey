@@ -1,0 +1,20 @@
+""""
+a) create a class
+b) instantiate a class
+
+Why a class: group data and functions to easily reuse them.
+
+Data associated to a class =  attrbute
+functions associated to a class =  method
+
+Example:
+Each employee has its own attributes like name, age, mail ...
+Each employee can perform actions
+
+We create the employee class. Which is a blueprint for creating instances.
+Each employee we create using the employee class will be an instance of that class.
+
+
+
+
+

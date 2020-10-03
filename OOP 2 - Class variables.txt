@@ -1,0 +1,23 @@
+Instance variables : unique for each Instance
+    in __INIT__ method: first, last, pay, email : these are the  instance variables and are set for each instance when it is created 
+    (when we initiate a instance, the  __INIT__ medthod is run which sets that instance variables/arguments)
+
+Class variable : is the same for all instances of a class
+    
+    We know that when defining a method, we access arguments in 1 of 2 ways:
+    - using "self" = the instance of the class 
+    - using the class itself
+     
+     When accessing the argumement using 'self'(through the instance) it gives us the option to set the argument for that specific instance
+     (at which time the argument is added to the instance namespace if the instance did not have that argument in its namespace)
+
+    
+
+
+Writing a method, we would never use:
+
+self.num_of_emps += 1 because the number of employees should not be changeable for a specific instance, but be an argmument of the class
+
+so we would use:
+
+employee.num_of_emps += 1 > counter for num_of_emps is augmented and this argument is a class variable that is instance-independant.
